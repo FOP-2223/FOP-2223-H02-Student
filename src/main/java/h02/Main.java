@@ -21,14 +21,14 @@ public class Main {
     // ---------------- DO NOT CHANGE ANYTHING ABOVE THIS LINE ---------------
 
     public static void main(String[] args) {
-        int cols = getRandomWorldSize();
-        int rows = getRandomWorldSize();
-        World.setSize(cols, rows);
+        int numberOfColumns = getRandomWorldSize();
+        int numberOfRows = getRandomWorldSize();
+        World.setSize(numberOfColumns, numberOfRows);
         World.setDelay(DELAY);
         World.setVisible(true);
-        System.out.println("Size of world: " + cols + "x" + rows);
+        System.out.println("Size of world: " + numberOfColumns + "x" + numberOfRows);
 
-        // Put your code here
+        // TODO H2 - Put your code here
 
     }
 
@@ -41,15 +41,7 @@ public class Main {
      * @return                  Correctly initialized allRobots array.
      */
     public static Robot[] initializeRobotsPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
-        int numberOfRobots = 0;
-
-        // Put your code here
-
-        Robot[] allRobots = new Robot[numberOfRobots];
-
-        // Put your code here
-
-        return allRobots;
+        throw new RuntimeException("H1 - not implemented"); // TODO: H1 - remove if implemented
     }
 
     /**
@@ -61,9 +53,7 @@ public class Main {
      * @param allRobots   Array containing all the robots.
      */
     public static void letAllRobotsGo(Robot[] allRobots) {
-
-        // Put your code here
-
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -73,10 +63,7 @@ public class Main {
      * @return            True, if array contains robot.
      */
     public static int numberOfNullElements(Robot[] allRobots) {
-
-        // Put your code here
-
-        return 0;
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -86,10 +73,7 @@ public class Main {
      * @return        True, if the robot can move to the right.
      */
     public static boolean checkMoveToRight(Robot roby) {
-
-        // Put your code here
-
-        return false;
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -99,10 +83,7 @@ public class Main {
      * @return        The array.
      */
     public static int[] generateThreeRandomIndices(int bound) {
-
-        // Put your code here
-
-        return null;
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -111,9 +92,7 @@ public class Main {
      * @param array   The array to be sorted.
      */
     public static void sortArray(int[] array) {
-
-        // Put your code here
-
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -126,8 +105,6 @@ public class Main {
      * @param allRobots     Array containing the robots.
      */
     public static void swapRobots(int[] indices, Robot[] allRobots) {
-
-        // Put your code here
-
+        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
     }
 }
