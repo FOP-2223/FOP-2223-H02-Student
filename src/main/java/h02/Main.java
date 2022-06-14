@@ -28,7 +28,7 @@ public class Main {
         World.setVisible(true);
         System.out.println("Size of world: " + numberOfColumns + "x" + numberOfRows);
 
-        // TODO H2 - Put your code here
+        // TODO H2.2 - Put your code here
 
     }
 
