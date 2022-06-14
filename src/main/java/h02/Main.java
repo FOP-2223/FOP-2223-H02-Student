@@ -53,7 +53,7 @@ public class Main {
      * @param allRobots   Array containing all the robots.
      */
     public static void letAllRobotsGo(Robot[] allRobots) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -63,7 +63,7 @@ public class Main {
      * @return            True, if array contains robot.
      */
     public static int numberOfNullElements(Robot[] allRobots) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -73,7 +73,7 @@ public class Main {
      * @return        True, if the robot can move to the right.
      */
     public static boolean checkMoveToRight(Robot roby) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -83,7 +83,7 @@ public class Main {
      * @return        The array.
      */
     public static int[] generateThreeRandomIndices(int bound) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -92,7 +92,7 @@ public class Main {
      * @param array   The array to be sorted.
      */
     public static void sortArray(int[] array) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
@@ -105,6 +105,6 @@ public class Main {
      * @param allRobots     Array containing the robots.
      */
     public static void swapRobots(int[] indices, Robot[] allRobots) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H3 - remove if implemented
+        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 }
