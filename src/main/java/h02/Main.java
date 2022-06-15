@@ -67,12 +67,12 @@ public class Main {
     }
 
     /**
-     * Checks whether given robot can move to the right without leaving the world.
+     * Returns whether given robot can move to the right without leaving the world.
      *
      * @param roby    The robot.
      * @return        True, if the robot can move to the right.
      */
-    public static boolean checkMoveToRight(Robot roby) {
+    public static boolean canMoveToRight(Robot roby) {
         throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
