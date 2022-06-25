@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * Main entry point in executing the program.
  */
 public class Main {
-    // Delay between each action in Fopbot-World (world), for example:
+    // Delay between each action in FopBot-World (world), for example:
     // Waits 1000ms between each .move() call
     public static final int DELAY = 1000;
 
@@ -62,17 +62,17 @@ public class Main {
      * @param allRobots   The Robot-array.
      * @return            True, if array contains robot.
      */
-    public static int numberOfNullElements(Robot[] allRobots) {
+    public static int numberOfNullRobots(Robot[] allRobots) {
         throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
     /**
-     * Checks whether given robot can move to the right without leaving the world.
+     * Checks whether given robot can move forwards without leaving the world.
      *
      * @param roby    The robot.
-     * @return        True, if the robot can move to the right.
+     * @return        True, if the robot can move forwards.
      */
-    public static boolean checkMoveToRight(Robot roby) {
+    public static boolean canMoveForwards(Robot roby) {
         throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
@@ -82,7 +82,7 @@ public class Main {
      * @param bound   The upper bound for the int values.
      * @return        The array.
      */
-    public static int[] generateThreeRandomIndices(int bound) {
+    public static int[] generateThreeDistinctRandomIndices(int bound) {
         throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
     }
 
