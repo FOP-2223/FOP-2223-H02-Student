@@ -34,7 +34,7 @@ public class Main {
 
         Robot[] allRobots = initializeRobotsPattern(testPattern, numberOfColumns, numberOfRows);
 
-        // TODO: H2.1 Put your code here
+        // TODO: H2.2 - Put your code here
 
 
     }
@@ -74,7 +74,7 @@ public class Main {
     }
 
     /**
-     * Checks whether given robot can move forwards without leaving the world.
+     * Returns whether given robot can move forwards without leaving the world.
      *
      * @param roby    The robot.
      * @return        True, if the robot can move forwards.
