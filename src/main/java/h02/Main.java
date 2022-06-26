@@ -18,7 +18,8 @@ public class Main {
         return 4 + ThreadLocalRandom.current().nextInt(6);
     }
 
-    // ---------------- DO NOT CHANGE ANYTHING ABOVE THIS LINE ---------------
+    // Name of file for patterns
+    public static final String FILENAME = "ExamplePattern.txt";
 
     public static void main(String[] args) {
         int numberOfColumns = getRandomWorldSize();
@@ -28,7 +29,13 @@ public class Main {
         World.setVisible(true);
         System.out.println("Size of world: " + numberOfColumns + "x" + numberOfRows);
 
-        // TODO H2.2 - Put your code here
+        PatternProvider patternProvider = new PatternProvider(FILENAME);
+        boolean[][] testPattern = patternProvider.getPattern();
+
+        Robot[] allRobots = initializeRobotsPattern(testPattern, numberOfColumns, numberOfRows);
+
+        // TODO: H2.1 Put your code here
+
 
     }
 
