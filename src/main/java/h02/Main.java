@@ -80,16 +80,6 @@ public class Main {
     }
 
     /**
-     * Returns whether given robot can move forwards without leaving the world.
-     *
-     * @param roby    The robot.
-     * @return        True, if the robot can move forwards.
-     */
-    public static boolean canMoveForwards(Robot roby) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
-    }
-
-    /**
      * Creates an array containing three (pseudo-) random int values from 0 (inclusive) to given parameter (exclusive).
      *
      * @param bound   The upper bound for the int values.
