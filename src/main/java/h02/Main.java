@@ -114,7 +114,8 @@ public class Main {
     }
 
     /**
-     * Reduces the given robot array by the set amount.
+     * Reduces the given robot array by the set amount and only keeps non-null components.
+     *
      * @param robots    The array to be reduced.
      * @param reduceBy  The number of indices that are reduced.
      * @return          The reduced array.
@@ -127,7 +128,7 @@ public class Main {
      * Lets all robots in the given array walk to the right while also putting down coins.
      * If robots leave the world they are set to null.
      * After the steps are made, if more than three robots exist, three of them change their index.
-     * If more than 2 components of the array are null, the array is reduced by the amount of null components.
+     * If 3 or more components of the array are null, the array is reduced by the amount of null components.
      *
      * @param allRobots   Array containing all the robots.
      */
