@@ -6,6 +6,8 @@ import fopbot.World;
 import java.io.IOException;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static org.tudalgo.algoutils.student.Student.crash;
+
 /**
  * Main entry point in executing the program.
  */
@@ -46,6 +48,18 @@ public class Main {
     }
 
     /**
+     * Counts the number of robots in a pattern, given a specified world size.
+     *
+     * @param pattern           The pattern for the robots.
+     * @param numberOfColumns   Number of columns in the world.
+     * @param numberOfRows      Number of rows in the world.
+     * @return                  Number of robots in the world.
+     */
+    public static int countRobotsInPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
+        return crash(); // TODO: H1.1 - remove if implemented
+    }
+
+    /**
      * Initialize allRobots array for given pattern and world size.
      *
      * @param pattern           The pattern for the robots.
@@ -54,19 +68,7 @@ public class Main {
      * @return                  Correctly initialized allRobots array.
      */
     public static Robot[] initializeRobotsPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
-        throw new RuntimeException("H1 - not implemented"); // TODO: H1 - remove if implemented
-    }
-
-    /**
-     * Lets all robots in the given array walk to the right while also putting down coins.
-     * If robots leave the world they are set to null.
-     * After the steps are made, if more than three robots exist, three of them change their index.
-     * If more than 2 components of the array are null, the array is reduced by the amount of null components.
-     *
-     * @param allRobots   Array containing all the robots.
-     */
-    public static void letAllRobotsGo(Robot[] allRobots) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
+        return crash(); // TODO: H1.2 - remove if implemented
     }
 
     /**
@@ -76,7 +78,7 @@ public class Main {
      * @return            True, if array contains robot.
      */
     public static int numberOfNullRobots(Robot[] allRobots) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
+        return crash(); // TODO: H3.1 - remove if implemented
     }
 
     /**
@@ -86,7 +88,7 @@ public class Main {
      * @return        The array.
      */
     public static int[] generateThreeDistinctRandomIndices(int bound) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
+        return crash(); // TODO: H3.2 - remove if implemented
     }
 
     /**
@@ -95,7 +97,7 @@ public class Main {
      * @param array   The array to be sorted.
      */
     public static void sortArray(int[] array) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
+        crash(); // TODO: H3.3 - remove if implemented
     }
 
     /**
@@ -108,6 +110,28 @@ public class Main {
      * @param allRobots     Array containing the robots.
      */
     public static void swapRobots(int[] indices, Robot[] allRobots) {
-        throw new RuntimeException("H3 - not implemented"); // TODO: H3 - remove if implemented
+        crash(); // TODO: H3.4 - remove if implemented
+    }
+
+    /**
+     * Reduces the given robot array by the set amount.
+     * @param robots    The array to be reduced.
+     * @param reduceBy  The number of indices that are reduced.
+     * @return          The reduced array.
+     */
+    public static Robot[] reduceRobotArray(Robot[] robots, int reduceBy) {
+        return crash(); // TODO: H3.5 - remove if implemented
+    }
+
+    /**
+     * Lets all robots in the given array walk to the right while also putting down coins.
+     * If robots leave the world they are set to null.
+     * After the steps are made, if more than three robots exist, three of them change their index.
+     * If more than 2 components of the array are null, the array is reduced by the amount of null components.
+     *
+     * @param allRobots   Array containing all the robots.
+     */
+    public static void letRobotsMarch(Robot[] allRobots) {
+        crash(); // TODO: H4 - remove if implemented
     }
 }
