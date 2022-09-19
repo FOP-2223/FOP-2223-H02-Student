@@ -25,24 +25,42 @@ public class Main {
     public static final String FILENAME = "ExamplePattern.txt";
 
     public static void main(String[] args) {
+        // Get number of columns from method
         int numberOfColumns = getRandomWorldSize();
+
+        // Get number of rows from method
         int numberOfRows = getRandomWorldSize();
+
+        // Initialize World with specified number of columns and rows
         World.setSize(numberOfColumns, numberOfRows);
+
+        // Set the internal delay of the world
         World.setDelay(DELAY);
+
+        // Set the world visible
         World.setVisible(true);
+
+        // Print out size of the world to the command line
         System.out.println("Size of world: " + numberOfColumns + "x" + numberOfRows);
 
+        // Initialize new Main-object to call methods
+        Main main = new Main();
+
+        // Initialize a pattern provider for the .txt-file in resources
         PatternProvider patternProvider;
         try {
             patternProvider = new PatternProvider(FILENAME);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        // Get the pattern from the .txt file
         boolean[][] testPattern = patternProvider.getPattern();
 
-        Robot[] allRobots = initializeRobotsPattern(testPattern, numberOfColumns, numberOfRows);
+        // Call initializeRobotsPattern
+        Robot[] allRobots = main.initializeRobotsPattern(testPattern, numberOfColumns, numberOfRows);
 
-        // TODO: H2.2 - Put your code here
+        // TODO: H2.2 - Put your code here:
 
 
     }
@@ -55,7 +73,7 @@ public class Main {
      * @param numberOfRows      Number of rows in the world.
      * @return                  Number of robots in the world.
      */
-    public static int countRobotsInPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
+    public int countRobotsInPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
         return crash(); // TODO: H1.1 - remove if implemented
     }
 
@@ -67,7 +85,7 @@ public class Main {
      * @param numberOfRows      Number of rows in world.
      * @return                  Correctly initialized allRobots array.
      */
-    public static Robot[] initializeRobotsPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
+    public Robot[] initializeRobotsPattern(boolean[][] pattern, int numberOfColumns, int numberOfRows) {
         return crash(); // TODO: H1.2 - remove if implemented
     }
 
@@ -77,7 +95,7 @@ public class Main {
      * @param allRobots   The Robot-array.
      * @return            True, if array contains robot.
      */
-    public static int numberOfNullRobots(Robot[] allRobots) {
+    public int numberOfNullRobots(Robot[] allRobots) {
         return crash(); // TODO: H3.1 - remove if implemented
     }
 
@@ -87,7 +105,7 @@ public class Main {
      * @param bound   The upper bound for the int values.
      * @return        The array.
      */
-    public static int[] generateThreeDistinctRandomIndices(int bound) {
+    public int[] generateThreeDistinctRandomIndices(int bound) {
         return crash(); // TODO: H3.2 - remove if implemented
     }
 
@@ -96,7 +114,7 @@ public class Main {
      *
      * @param array   The array to be sorted.
      */
-    public static void sortArray(int[] array) {
+    public void sortArray(int[] array) {
         crash(); // TODO: H3.3 - remove if implemented
     }
 
@@ -109,7 +127,7 @@ public class Main {
      * @param indices       Array containing indices i, j and k.
      * @param allRobots     Array containing the robots.
      */
-    public static void swapRobots(int[] indices, Robot[] allRobots) {
+    public void swapRobots(int[] indices, Robot[] allRobots) {
         crash(); // TODO: H3.4 - remove if implemented
     }
 
@@ -120,7 +138,7 @@ public class Main {
      * @param reduceBy  The number of indices that are reduced.
      * @return          The reduced array.
      */
-    public static Robot[] reduceRobotArray(Robot[] robots, int reduceBy) {
+    public Robot[] reduceRobotArray(Robot[] robots, int reduceBy) {
         return crash(); // TODO: H3.5 - remove if implemented
     }
 
@@ -132,7 +150,7 @@ public class Main {
      *
      * @param allRobots   Array containing all the robots.
      */
-    public static void letRobotsMarch(Robot[] allRobots) {
+    public void letRobotsMarch(Robot[] allRobots) {
         crash(); // TODO: H4 - remove if implemented
     }
 }
