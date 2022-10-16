@@ -32,7 +32,7 @@ val publicTest: SourceSet by sourceSets.creating {
 }
 
 dependencies {
-    implementation("org.tudalgo:algoutils-student:0.1.0-SNAPSHOT")
+    implementation("org.tudalgo:algoutils-student:0.3.0")
     implementation("org.jetbrains:annotations:23.0.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
     implementation("org.sourcegrade:fopbot:0.3.0")
